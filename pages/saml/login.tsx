@@ -166,6 +166,8 @@ export default function Login() {
           <div className='rounded-md border border-blue-200 bg-blue-50 p-4'>
             <p className='text-sm text-blue-900'>
               This is a simulated login screen. You may choose any username, but only the domains{' '}
+<code className='font-mono'>mirakl.com</code> and{' '}
+              
               <code className='font-mono'>example.com</code> and{' '}
               <code className='font-mono'>example.org</code> are allowed.
             </p>
