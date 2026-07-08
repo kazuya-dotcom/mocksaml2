@@ -9,8 +9,8 @@ export default function Login() {
 
   const authUrl = namespace ? `/api/namespace/${namespace}/saml/auth` : '/api/saml/auth';
   const [state, setState] = useState({
-    username: 'jackson',
-    domain: 'example.com',
+    username: 'test',
+    domain: 'mirakl.com',
     acsUrl: 'https://sso.eu.boxyhq.com/api/oauth/saml',
     audience: 'https://saml.boxyhq.com',
   });
