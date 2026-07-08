@@ -1,0 +1,44 @@
+{
+  "name": "mock-saml",
+  "version": "1.4.2",
+  "description": "Mock SAML is a free SAML 2.0 Identity Provider for testing SAML SSO integrations.",
+  "private": true,
+  "license": "Apache 2.0",
+  "scripts": {
+    "dev": "next dev --webpack -p 4000",
+    "build": "next build --webpack",
+    "start": "next start -p 4000",
+    "lint": "eslint -c eslint.config.cjs ./",
+    "check-format": "prettier --check .",
+    "format": "prettier --write .",
+    "release": "git checkout release && git merge origin/main && release-it && git checkout main && git merge origin/release && git push origin main"
+  },
+  "dependencies": {
+    "@boxyhq/saml20": "1.15.2",
+    "next": "16.2.9",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "react-gtm-module": "2.0.11"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.1",
+    "@types/node": "25.7.0",
+    "@types/react": "19.2.17",
+    "@types/react-gtm-module": "2.0.4",
+    "@typescript-eslint/parser": "8.59.2",
+    "eslint": "10.3.0",
+    "eslint-config-next": "16.2.9",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-i18next": "6.1.4",
+    "json": "11.0.0",
+    "postcss": "8.5.14",
+    "prettier": "3.8.3",
+    "prettier-plugin-tailwindcss": "0.8.0",
+    "release-it": "20.0.1",
+    "tailwindcss": "4.2.4",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": ">=18.14.0"
+  }
+}
