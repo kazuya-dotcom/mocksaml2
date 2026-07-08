@@ -135,6 +135,7 @@ export default function Login() {
                     value={state.domain}
                     onChange={handleChange}
                     className='w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-primary focus:ring-2 focus:ring-primary/30'>
+                    <option value='mirakl.com'>@mirakl.com</option>
                     <option value='example.com'>@example.com</option>
                     <option value='example.org'>@example.org</option>
                   </select>
